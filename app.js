@@ -104,9 +104,9 @@ startonebutton.addEventListener('click', function() {
     }
 
     function showCompletionMessage() {
-        alert('Completed')
         startone2.innerHTML = `<b>${startcount}</b> Completed`;
         addRestartButton();
+        alert('Completed')
     }
 
     function addRestartButton() {
@@ -169,7 +169,7 @@ starttwobutton.addEventListener('click', function() {
     startcardTwo.className = 'start-card-two';
     let starttwohfour = document.createElement('h4');
     let starttwo2 = document.createElement('h2');
-    starttwo2.textContent = `${startcount}`;
+    starttwo2.textContent = `${startcount2}`;
     starttwohfour.textContent = '(33 Times)';
     let startbutt = document.createElement('button');
     startbutt.className = 'b-plus-one1';
@@ -195,8 +195,8 @@ startbutt.addEventListener('click', HandleStartClick);
     }
 
     function ShowCompletionMessage() {
-        alert('Completed')
         starttwo2.innerHTML = `<b>${startcount2}</b> Completed`;
+        alert('Completed')
         AddRestartButton();
     }
 
@@ -300,8 +300,8 @@ startthreebutton.addEventListener('click', function() {
     }
 
     function showCompletionMessage() {
-        alert('Completed')
         startthree2.innerHTML = `<b>${startcount3}</b> Completed`;
+        alert('Completed')
         addRestartButton();
     }
 

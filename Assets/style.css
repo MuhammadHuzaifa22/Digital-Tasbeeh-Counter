@@ -111,14 +111,16 @@ i{
     justify-content: center;
 }
 .Reset_div button{
-    border-radius: 100px;
+    border-radius: 20px;
     background: #01301C;
     border: none;
     color: #30ff07;
-    height: 15vh;
-    width:15vh;
-    font-weight: bolder;
-    font-size: 25px;
+    height: auto;
+    width:auto;
+    padding: 8px;
+    font-weight: lighter;
+    font-size: 20px;
+    margin-bottom: 1%;
 }
 .Reset_div button:active{
     border: 3px solid #30ff07;
