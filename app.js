@@ -97,14 +97,14 @@ startonebutton.addEventListener('click', function() {
 
     function incrementCounter() {
         startcount += 1;
-        startone2.innerHTML = `<b>${startcount}</b>`;
+        startone2.innerHTML = `${startcount}`;
         if (startcount === 33) {
             showCompletionMessage();
         }
     }
 
     function showCompletionMessage() {
-        startone2.innerHTML = `<b>${startcount}</b> Completed`;
+        startone2.innerHTML = `${startcount} Completed`;
         addRestartButton();
         alert('Completed')
     }
@@ -136,8 +136,8 @@ startonebutton.addEventListener('click', function() {
 
     startbut2.addEventListener('click',function(){
         if(startcount > -1){
-            startone2.innerHTML = `<b>${startcount}</b>`;
             startcount = startcount - 1;
+            startone2.innerHTML = `${startcount}`;
         }
     })
     
@@ -188,14 +188,14 @@ startbutt.addEventListener('click', HandleStartClick);
 
     function IncrementCounter() {
         startcount2 += 1;
-        starttwo2.innerHTML = `<b>${startcount2}</b>`;
+        starttwo2.innerHTML = `${startcount2}`;
         if (startcount2 === 33) {
             ShowCompletionMessage();
         }
     }
 
     function ShowCompletionMessage() {
-        starttwo2.innerHTML = `<b>${startcount2}</b> Completed`;
+        starttwo2.innerHTML = `${startcount2} Completed`;
         alert('Completed')
         AddRestartButton();
     }
@@ -214,7 +214,7 @@ startbutt.addEventListener('click', HandleStartClick);
 
     function ResetCounter() {
         startcount2 = 0;
-        starttwo2.innerHTML = `<b>${startcount2}</b>`;
+        starttwo2.innerHTML = `${startcount2}`;
     }
     imgtwo.appendChild(startcardTwo);
 
@@ -228,8 +228,8 @@ startbutt.addEventListener('click', HandleStartClick);
     startbut22.addEventListener('click',function(){
         if(startcount2 > -1){
 
-            starttwo2.textContent = `${startcount2}`;
             startcount2 = startcount2 - 1;
+            starttwo2.textContent = `${startcount2}`;
         }
 
     })
@@ -293,14 +293,14 @@ startthreebutton.addEventListener('click', function() {
 
     function incrementCounter() {
         startcount3 += 1;
-        startthree2.innerHTML = `<b>${startcount3}</b>`;
+        startthree2.innerHTML = `${startcount3}`;
         if (startcount3 === 34) {
             showCompletionMessage();
         }
     }
 
     function showCompletionMessage() {
-        startthree2.innerHTML = `<b>${startcount3}</b> Completed`;
+        startthree2.innerHTML = `${startcount3} Completed`;
         alert('Completed')
         addRestartButton();
     }
@@ -332,8 +332,8 @@ startthreebutton.addEventListener('click', function() {
 
     startbut222.addEventListener('click',function(){
         if(startcount3 > -1){
-            startthree2.textContent = `${startcount3}`;
             startcount3 = startcount3 - 1;
+            startthree2.textContent = `${startcount3}`;
         }
     })
 
