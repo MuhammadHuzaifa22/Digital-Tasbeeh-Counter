@@ -81,9 +81,10 @@ startonebutton.addEventListener('click', function() {
     let startcardOne = document.createElement('div');
     startcardOne.className = 'start-card-one';
     let startonehfour = document.createElement('h5');
-    let startone2 = document.createElement('h2');
-    startone2.innerHTML = `${startcount}`;
     startonehfour.textContent = '(33 Times)';
+    let startone2 = document.createElement('h2');
+    startone2.style.color = 'green'
+    startone2.innerHTML = `${startcount}`;
     let startbut = document.createElement('button');
     startbut.className = 'b-plus-one';
     startbut.textContent = '+';
@@ -135,7 +136,7 @@ startonebutton.addEventListener('click', function() {
 
 
     startbut2.addEventListener('click',function(){
-        if(startcount > -1){
+        if(startcount >= 1){
             startcount = startcount - 1;
             startone2.innerHTML = `${startcount}`;
         }
@@ -169,6 +170,7 @@ starttwobutton.addEventListener('click', function() {
     startcardTwo.className = 'start-card-two';
     let starttwohfour = document.createElement('h4');
     let starttwo2 = document.createElement('h2');
+    starttwo2.style.color = 'green'
     starttwo2.textContent = `${startcount2}`;
     starttwohfour.textContent = '(33 Times)';
     let startbutt = document.createElement('button');
@@ -226,9 +228,8 @@ startbutt.addEventListener('click', HandleStartClick);
 
 
     startbut22.addEventListener('click',function(){
-        if(startcount2 > -1){
-
-            startcount2 = startcount2 - 1;
+        if(startcount2 >= 1){
+            startcount2 = startcount2 -  1
             starttwo2.textContent = `${startcount2}`;
         }
 
@@ -270,6 +271,7 @@ startthreebutton.addEventListener('click', function() {
     startcardThree.className = 'start-card-three';
     let startthreehfour = document.createElement('h4');
     let startthree2 = document.createElement('h2');
+    startthree2.style.color = 'green'
     startthree2.textContent = `${startcount3}`;
     startthreehfour.textContent = '(34 Times)';
     let startbuttt = document.createElement('button');
@@ -308,8 +310,10 @@ startthreebutton.addEventListener('click', function() {
     function addRestartButton() {
         const restart3 = document.createElement('button');
         restart3.textContent = "Restart";
+        restart3.className = "restart-button";
         restart3.addEventListener('click', handleRestartClick);
         startbut222.insertAdjacentElement('afterend', restart3);
+
     }
 
     function handleRestartClick(event) {
@@ -331,10 +335,17 @@ startthreebutton.addEventListener('click', function() {
 
 
     startbut222.addEventListener('click',function(){
-        if(startcount3 > -1){
+        if(startcount3 >= 1){
             startcount3 = startcount3 - 1;
             startthree2.textContent = `${startcount3}`;
+            // restart3.style.display = 'none'
+            // const restartButton = counterContainer.querySelector('.restart-button');
+            // if (restartButton) {
+            //     restartButton.remove();
+            // }
+            
         }
+     
     })
 
 
