@@ -1,6 +1,6 @@
 
 
-
+const below = document.querySelector('.below_div')
 let Plus = 0;
 let incrementValue = 1; // Default increment value
 
@@ -50,13 +50,14 @@ const letsBegin = document.querySelector('.lets-begin');
 const boxDiv = document.querySelector('.box_div');
 
 letsBegin.addEventListener('click',()=>{
+    below.style.display = 'none'
     letsBegin.style.display = 'none'
     let letsbeginCard = document.createElement('div');
     letsbeginCard.className = 'lets_bigin-card';
     let imgone = document.createElement('div');
     imgone.className = 'imgone';
     let imgonneImg = document.createElement('img')
-    imgonneImg.src = "./Assets/Images/1_0spjF96VRK9_mt4Ry9DZdg.png";
+    imgonneImg.src = "./Assets/Images/P1.png";
     let startonebutton = document.createElement('button');
     startonebutton.className = 'startedone';
     startonebutton.textContent = 'Start';
@@ -83,7 +84,7 @@ startonebutton.addEventListener('click', function() {
     let startonehfour = document.createElement('h5');
     startonehfour.textContent = '(33 Times)';
     let startone2 = document.createElement('h2');
-    startone2.style.color = 'green'
+    // startone2.style.color = 'green'
     startone2.innerHTML = `${startcount}`;
     let startbut = document.createElement('button');
     startbut.className = 'b-plus-one';
@@ -113,6 +114,7 @@ startonebutton.addEventListener('click', function() {
     function addRestartButton() {
         const restart1 = document.createElement('button');
         restart1.textContent = "Restart";
+        restart1.classList.add("restartOne");
         restart1.addEventListener('click', handleRestartClick);
         startbut.insertAdjacentElement('afterend', restart1);
     }
@@ -153,7 +155,7 @@ startonebutton.addEventListener('click', function() {
 let imgtwo = document.createElement('div');
 imgtwo.className = 'imgtwo';
 let imgtwoImg = document.createElement('img');
-imgtwoImg.src = "./Assets/Images/alhamdulillah-calligraphy-in-moallah-style-alhamdulillah-is-arabic-phrase-meaning-praise-be-to-god-or-thank-god-free-vector.jpg";
+imgtwoImg.src = "./Assets/Images/P2.png";
 let starttwobutton = document.createElement('button');
     starttwobutton.className = 'startedtwo';
     starttwobutton.textContent = 'Start';
@@ -170,7 +172,7 @@ starttwobutton.addEventListener('click', function() {
     startcardTwo.className = 'start-card-two';
     let starttwohfour = document.createElement('h4');
     let starttwo2 = document.createElement('h2');
-    starttwo2.style.color = 'green'
+    // starttwo2.style.color = 'green'
     starttwo2.textContent = `${startcount2}`;
     starttwohfour.textContent = '(33 Times)';
     let startbutt = document.createElement('button');
@@ -251,7 +253,7 @@ startbutt.addEventListener('click', HandleStartClick);
 let imgthree = document.createElement('div');
 imgthree.className = 'imgthree';
 let imgthreeImg = document.createElement('img');
-imgthreeImg.src = "./Assets/Images/images.jpeg";
+imgthreeImg.src = "./Assets/Images/P3.png";
 let startthreebutton = document.createElement('button');
     startthreebutton.className = 'startedthree';
     startthreebutton.textContent = 'Start';
@@ -271,7 +273,7 @@ startthreebutton.addEventListener('click', function() {
     startcardThree.className = 'start-card-three';
     let startthreehfour = document.createElement('h4');
     let startthree2 = document.createElement('h2');
-    startthree2.style.color = 'green'
+    // startthree2.style.color = 'green'
     startthree2.textContent = `${startcount3}`;
     startthreehfour.textContent = '(34 Times)';
     let startbuttt = document.createElement('button');
@@ -372,5 +374,31 @@ startthreebutton.addEventListener('click', function() {
 
 
 
+
+
+
+document.getElementById("restart1").addEventListener("click", function() {
+    var sound = document.getElementById("button-sound");
+    sound.play();
+});
+
+
+document.getElementById("restart2").addEventListener("click", function() {
+    var sound1 = document.getElementById("button-sound2");
+    sound1.play();
+});
+
+
+document.getElementById("restart3").addEventListener("click", function() {
+    var sound2 = document.getElementById("button-sound3");
+    sound2.play();
+});
+
+
+
+document.querySelector(".restart5").addEventListener("click", function() {
+    var sound3 = document.getElementById("button-sound2");
+    sound3.play();
+});
 
 

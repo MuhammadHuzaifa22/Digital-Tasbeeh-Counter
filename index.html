@@ -12,17 +12,18 @@
 <body>
     <div class="allBg">
             
-    <h2 style="text-align: center;font-family: monospace;font-weight: bolder;font-size: 45px;color: white;">Tasbeeh Counter</h2>
-
+        <h2 style="text-align: center;font-family: monospace;font-weight: bolder;font-size: 45px;color: white;">Tasbeeh Counter</h2>
+        
+        <!-- <img src="" alt=""> -->
     <div class="Reset_div">
     
-        <button type="button" onclick="reset()"> Reset </button>
+        <button type="button" onclick="reset()" id="restart1"> Reset </button>
     </div>
         <div class="flex_div">
             <h1 id="counter">0</h1>
             
             <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
                     +1
                 </button>
                 <ul class="dropdown-menu">
@@ -50,29 +51,38 @@
     
         
     <div class="div_buttons">
-        <button type="button" onclick="PlusOne(this)"><i class="fa-solid fa-chevron-up"></i></button>
+        <button type="button" onclick="PlusOne(this)" style="font-size: 40px;" id="restart2">+</button>
     </div>
     <div class="div_buttons2">
-        <button onclick="minus()"><i class="fa-solid fa-chevron-down"></i></button>
+        <button onclick="minus()" id="restart3">-</button>
     </div>
         
-    
-    
-    
-    <div class="img_div">
-        <img src="./Assets/Images/maxresdefault.jpg" alt="">
-    </div>
-    
-    <div class="lets-begin-button">
-        <button type="button" class="lets-begin">Let's Begin</button>
-    </div>
-    
+    <audio id="button-sound" src="./Assets/mouse-click-153941.mp3"></audio>
+    <audio id="button-sound2" src="./Assets/jjj.mp3"></audio>
+    <audio id="button-sound3" src="./Assets/ef.mp3"></audio>
 
+    
+    <div class="below_div">
+        
+                <div class="img_div">
+                    <img src="./Assets/Images/maxresdefault.jpg" alt="">
+                </div>
+                <h4 style="text-align: center;color: white;font-family: monospace;">Start this tasbeeh with the below button</h4>
+                <div class="lets-begin-button">
+                    <button type="button" class="lets-begin restart5" >Let's Begin</button>
+                </div>
+                
+                <div class="new_div">
+                    <img src="./Assets/Images/sd.jpg" alt="">
+                </div>
+    
+    </div>
     
 
 
     
     <div class="box_div">
+        
     <!-- <div class="lets_bigin-card">
     
             <div class="imgone">
