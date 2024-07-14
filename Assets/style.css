@@ -189,12 +189,12 @@ h1{
 }
 .lets_bigin-card{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: column; */
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 5px;
     padding: 5px;
-    gap: 3%;
+    gap: 6%;
     /* background :#f36e028e; */
     border-radius: 20px;
     /* border: 1px solid ; */
@@ -202,7 +202,7 @@ h1{
 .imgone img{
     border-radius: 20px;
     /* border: 2px solid #01301C; */
-width: 30vw;
+width: 90%;
     height: 30vh;
 
     margin-top: 1%;
@@ -231,7 +231,7 @@ width: 30vw;
     background: white;
     /* color: #0ccf64; */
     color: #000;
-
+width: 90%;
     /* font-weight: bolder; */
     font-size: 25px;
     border: none;
@@ -241,15 +241,7 @@ width: 30vw;
     flex-direction: column;
     justify-content: center;
 }
-/* .imgtwo button{
-    margin-top: 1%;
-    border-radius: 50px;
-    background: #01301C;
-    color: #0ccf64;
-    font-weight: bolder;
-    font-size: 35px;
-    border: none;
-} */
+
 .startedtwo{
     margin-top: 1%;
     border-radius: 10px;
@@ -265,7 +257,7 @@ width: 30vw;
     border-radius: 20px;
 
     /* border: 2px solid #01301C; */
-    width: 30vw;
+    width: 110%;
     height: 30vh;
 
     margin-top: 1%;
@@ -276,7 +268,7 @@ width: 30vw;
     border-radius: 20px;
 
     /* border: 2px solid #01301C; */
-    width: 30vw;
+    width: 60%;
     height: 30vh;
 
     margin-top: 1%;
@@ -313,6 +305,7 @@ width: 30vw;
     border-radius: 10px;
     margin-top: 15px;
     background: white;
+    width: 90%;
 
     text-align: center;
     font-weight: bolder;
@@ -340,6 +333,7 @@ width: 30vw;
     border-radius: 10px;
     margin-top: 15px;
     background: white;
+    width: 110%;
 
     text-align: center;
     font-weight: bolder;
@@ -368,6 +362,8 @@ width: 30vw;
     border-radius: 10px;
     background: white;
     margin-top: 15px;
+    width: 60%;
+
 
 }
 .allBg{
