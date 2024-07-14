@@ -49,7 +49,9 @@ function reset(){
 const letsBegin = document.querySelector('.lets-begin');
 const boxDiv = document.querySelector('.box_div');
 
+const Heading = document.querySelector('.hr');
 letsBegin.addEventListener('click',()=>{
+    Heading.style.display = 'block'
     below.style.display = 'none'
     letsBegin.style.display = 'none'
     let letsbeginCard = document.createElement('div');
@@ -377,6 +379,9 @@ startthreebutton.addEventListener('click', function() {
 
 
 
+
+
+
 document.getElementById("restart1").addEventListener("click", function() {
     var sound = document.getElementById("button-sound");
     sound.play();
@@ -400,5 +405,7 @@ document.querySelector(".restart5").addEventListener("click", function() {
     var sound3 = document.getElementById("button-sound2");
     sound3.play();
 });
+
+
 
 
